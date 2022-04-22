@@ -31,7 +31,7 @@ getCountries().then(() => {
 					};
 					geo.features.push(newResults);
 				}
-				fs.writeFile(`${process.env.outDir}/countries_maritime_${distance}.geo.json`, JSON.stringify(geo), "utf-8", () => {});
+				fs.writeFile(`${process.env.outDir}/maritime_${distance}m.geo.json`, JSON.stringify(geo), "utf-8", () => {});
 			});
 		}
 	});
