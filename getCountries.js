@@ -8,6 +8,9 @@ function sleep(ms) {
 	});
 }
 
+/**
+ * Generates temporary geoJSON files for each country's borders based on OpenStreetMap data.
+ */
 async function getCountries(){
 	for(let country in countries){
 		getRelation(countries[country]).then(response => {
